@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Park</title>
+  <script type="module" src="./script.js" defer></script>
+  <link rel="icon" type="image/x-icon" href="./img/png/smart-park-high-resolution-logo-white-on-black-background.png">
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="logo-div">
+      <img src="./img/png/smart-park-high-resolution-logo-white-on-black-background.png" alt="parking-lot-logo">
+    </div>
+    <button class="manage-btn" type="button">Gerenciar</button>
+  </header>
+  <section class="search-sec">
+    <div>
+      <div class="search-input">
+        <label>Pesquisar placa: </label>
+        <input type="text" maxlength="7" pattern="/\w{4}\d{3}/g">
+      </div>
+      <button type="button" class="search-btn">Buscar</button>
+      <div class="search-response">
+
+      </div>
+    </div>
+    <p>Vagas disponíveis: <span class="available-spots">3</span></p>
+  </section>
+  <section class="parking-sec">
+  </section>
+  <div class="path">
+    <div class="entry">Entrada</div>
+    <div class="exit">Saída</div>
+  </div>
+  <div class="modal-bg">
+    <div class="modal">
+      <div>
+        <p>Visão Geral</p>
+        <span class="close-modal">x</span>
+      </div>
+      <table>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Placa</th>
+            <th>Entrada</th>
+            <th>Saída</th>
+            <th>Registrado</th>
+            <th>Horas</th>
+            <th>Valor</th>
+          </tr>
+        </thead>
+        <tbody class="tbody">
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <footer class="footer">
+    <p>Copyright©2022 - Parking Lot Company</p>
+  </footer>
+</body>
+
+</html>
